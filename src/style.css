@@ -25,7 +25,7 @@ h3 {
     font-size: 11px;
 }
 
-.container {
+#textarea {
     display: flex;
     justify-content: center;
     height: 300px;
@@ -37,7 +37,7 @@ h3 {
     border-radius: 5px;
 }
 
-.button-one {
+#speak {
     font-family: sans-serif;
     cursor: pointer;
     font-size: 12px;
@@ -51,11 +51,11 @@ h3 {
     overflow: hidden;
 }
 
-.button-one:hover {
+#speak:hover {
     background: rgb(120, 160, 40);
     color: white;
 }
-.button-one:after {
+#speak:after {
     content: "";
     background-color: rgb(253, 253, 253);
     display: block;
@@ -67,7 +67,7 @@ h3 {
     opacity: 0;
     transition: all 0.9s;
 }
-.button-one:active:after{
+#speak:active:after{
  padding: 0;
  margin: 0;
  opacity: 1;
