@@ -2,20 +2,20 @@ speak.addEventListener('click',function(){
     var speech = true;
     window.SpeechRecognition = window.webkitSpeechRecognition;
 
-    const recognition = new SpeechRecognition();
-    recognition.interimResults = true;
+    const RECOGNITION = new SpeechRecognition();
+    RECOGNITION.interimResults = true;
 
-    recognition.addEventListener('result', e => {
-        const transcript = Array.from(e.results)
+    RECOGNITION.addEventListener('result', e => {
+        const TRANSCRIPT = Array.from(e.results)
             .map(result => result[0])
             .map(result => result.transcript)
             .join('')
 
-        document.getElementById("textarea").innerHTML = transcript;
-        console.log(transcript);
+        document.getElementById("textarea").innerHTML = TRANSCRIPT;
+        console.log(TRANSCRIPT);
     });
     
     if (speech == true) {
-        recognition.start();
+        RECOGNITION.start();
     }
 })
