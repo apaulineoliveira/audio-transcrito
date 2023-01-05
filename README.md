@@ -18,3 +18,9 @@
 <p>Segundo a <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/from">mdn</a> o método <code>from</code> cria uma nova instância de um array quando for passado um array-like ou um iterable object (como foi utilizado no projeto) como argumento. Os objetos iteráveis permitem coletar seus elementos, assim como <code>map</code>.
 <h2>join()</h2>
 <p>Este método é usado para juntar os elementos de um array em uma string. Os elementos da string serão separados por um separador especificado e seu valor padrão é uma vírgula (,). No código do projeto o <code>join</code> junta os elementos do array em uma string usando '' (string vazia).</p>
+
+<h1>In English</h1>
+<h2>Goal</h2>
+  <p>The goal of this project was to create an audio-to-text transcriber made with HTML, CSS and pure Javascript.</p>
+<h1>About the Project</h1>
+  <li> I opted for a simple and functional HTML and CSS. Regarding the style of the page, I built some animations with the pseudo-elements <code>after</code> and <code>before</code>, in addition to <code>hover</code>, in order to make the visually cool and user-intuitive audio record button. It is worth mentioning that all the main measures are in percentages aimed at the responsiveness of the page.</li><br>
