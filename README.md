@@ -38,7 +38,7 @@ The <code>transcript</code> constant stores the text that informs what the user 
 <h2>Understanding array methods</h2>
    <h3>map()</h3>
      <p>A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">mdn</a> reveals that this method invokes the function <code>callback</code> passed as an argument for each array element and returns a new array as the result. When dealing with the project code, the callback function passed in the map method is <code>result</code>.</p>
-<h3>Syntax ⤵️</h3>
+<h3>Syntax</h3>
 <code>arr.map(callback[, thisArg])</code><br></br>
    <h3>from()</h3>
      <p>According to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from">mdn</a> the <code>from </code> creates a new instance of an array when passing an array-like or an iterable object (as used in the project) as an argument. Iterable objects let you collect their elements, just like <code>map</code>.
