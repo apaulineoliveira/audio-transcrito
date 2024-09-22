@@ -1,14 +1,17 @@
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2020/03/19/21/25/laptop-4948838_1280.jpg");
-    background-repeat: no-repeat;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background-color: #F6F8F9;
+   
 }
 
-h2,p {
+
+h2 {
+    color: #193238;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5%;    
+}
+p {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(195, 195, 195);
@@ -28,9 +31,9 @@ h3 {
 #textarea {
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 180px;
     width: 45%;
-    border: 2px solid rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
     background-color: rgba(243, 243, 243, 0.966);
     font-size: 1rem;
     margin: 1.5rem;
