@@ -10,13 +10,15 @@
 </head>
 <body>
     <h2>Transcritor de áudio</h2>
-        <p id="subtitulo">Pressione o botão <b>abaixo</b> enquanto fala para que o texto seja transcrito posteriormente.</p>
-    <div id="textarea">
-        <p>O texto será exibido aqui...</p>
-    </div>
-<button id="speak">
-    <i class="fa-solid fa-microphone"></i>
-</button>
+    <p id="subtitulo">Pressione o botão <b>abaixo</b> enquanto fala para que o texto seja transcrito posteriormente.</p>
+    
+    <!-- Substitui a div por um textarea -->
+    <textarea id="textarea" placeholder="O texto será exibido aqui..." readonly></textarea>
+
+    <button id="speak">
+        <i class="fa-solid fa-microphone"></i> Fale para gerar o texto
+    </button>
+
     <script src="src/script.js"></script>
 </body>
 </html>
