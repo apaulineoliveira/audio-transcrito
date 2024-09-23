@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transcritor de áudio</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <h2>Transcritor de áudio</h2>
-
+        <p id="subtitulo">Pressione o botão <b>abaixo</b> enquanto fala para que o texto seja transcrito posteriormente.</p>
     <div id="textarea">
-        <p>O texto será exibido aqui</p>
+        <p>O texto será exibido aqui...</p>
     </div>
-<button id="speak">Fale para gerar o texto</button>
+<button id="speak">
+    <i class="fa-solid fa-microphone"></i>
+</button>
     <script src="src/script.js"></script>
 </body>
 </html>

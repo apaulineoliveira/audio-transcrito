@@ -1,5 +1,5 @@
 body {
-    background-color: #F6F8F9;
+    background-color: #fffdfd;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,12 +8,22 @@ body {
     margin: 0;
 }
 
-h2, h3 {
-    color: #193238;
+#subtitulo {
+    color: #515151;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+   
+}
+
+h2 {
+    color: #7c7c7c;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 5%;    
+    font-weight: 300;
+        
+   
 }
 
 p {
@@ -30,11 +40,11 @@ p {
     justify-content: center;
     height: 180px;
     width: 45%;
-    border: 1px solid rgb(233, 233, 233);
+    
     background-color: #EBEDED;
     font-size: 1rem;
-    margin: 1.5rem auto;
-    border-radius: 5px;
+    margin: 1.2rem auto;
+    border-radius: 10px;
 }
 
 #speak {
@@ -70,7 +80,7 @@ p {
     margin-left: -20px !important;
     margin-top: -120%;
     opacity: 0;
-    transition: all 0.9s;
+    transition: all 2s;
 }
 
 #speak:active:after {
