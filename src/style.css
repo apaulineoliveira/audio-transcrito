@@ -37,13 +37,17 @@ p {
     height: 180px;
     width: 45%;
     background-color: #EBEDED;
-    font-size: 1rem;
+    font-size: 0.5rem;
     margin: 1.2rem auto;
     border-radius: 10px;
     padding: 10px;
-    resize: none; /* Remove a capacidade de redimensionar */
-    border: 1px solid rgb(233, 233, 233); /* Adiciona uma borda leve */
+    resize: none; 
+    border: 1px solid rgb(233, 233, 233);
     box-sizing: border-box;
+}
+
+#speak i {
+    margin-right: 8px;
 }
 
 #speak {

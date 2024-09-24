@@ -2,11 +2,10 @@ window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogn
 
 const recognition = new SpeechRecognition();
 recognition.interimResults = true;
-recognition.continuous = false; // Experimente mudar para true se necessário
-recognition.lang = 'pt-BR'; // Configura para português brasileiro
+recognition.continuous = false; 
+recognition.lang = 'pt-BR'; 
 let isListening = false;
 let finalTranscript = '';
-
 const button = document.getElementById('speak');
 const textarea = document.getElementById('textarea');
 
@@ -20,21 +19,21 @@ button.addEventListener('click', function() {
         recognition.stop();
         isListening = false;
         button.textContent = 'Fale para gerar o texto';
-        textarea.textContent = finalTranscript;  // Exibe o texto final no textarea
+        textarea.textContent = finalTranscript;  
         console.log('Reconhecimento de fala parado');
     }
 });
 
 recognition.addEventListener('result', function(e) {
-    console.log('Evento result capturado', e); // Verifica se o evento result está sendo disparado
+    console.log('Evento result capturado', e); 
     const interimTranscript = Array.from(e.results)
         .map(result => result[0])
         .map(result => result.transcript)
         .join('');
         
     finalTranscript = interimTranscript;
-    console.log('Transcrição capturada: ', finalTranscript);  // Verifica o texto capturado
-    textarea.textContent = finalTranscript; // Atualiza o textarea enquanto fala
+    console.log('Transcrição capturada: ', finalTranscript);  
+    textarea.textContent = finalTranscript; 
 });
 
 recognition.addEventListener('end', function() {
